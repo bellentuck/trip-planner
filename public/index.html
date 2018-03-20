@@ -8,6 +8,8 @@
   <script src="./bundle.js" defer></script>
   <link rel="stylesheet" href="./style.css">
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards" rel="stylesheet">
+
 </head>
 <body>
   <nav class="navbar">
@@ -26,55 +28,84 @@
 
     <div class="sidebar">
       <div id="selectionContainer">
-        <h3>Hotels</h3>
-        <select>
-          <option value="super8">Super 8</option>
-          <option value="super7">Super 7</option>
-          <option value="super6">Super 6</option>
-          <option value="super">Super the Original</option>
-        </select>
-        <button></button>
+        <h1>Hotels</h1>
+        <div class="selections">
+          <select class="styled-select semi-square">
+            <option value="super8">Super 8</option>
+            <option value="super7">Super 7</option>
+            <option value="super6">Super 6</option>
+            <option value="super">Super the Original</option>
+          </select>
+          <button>&#10004;</button>
+        </div>
 
-        <h3>Restaurants</h3>
-        <select>
+        <h1>Restaurants</h1>
+        <div class="selections">
+        <select class="styled-select semi-square">
             <option value="bees">Bees</option>
             <option value="genericOptionNumber4">Generic Option #4</option>
             <option value="fancy">Fancy</option>
           </select>
-          <button></button>
+          <button>&#10004;</button>
+          </div>
 
-        <h3>Activities</h3>
-        <select>
+        <h1>Activities</h1>
+        <div class="selections">
+        <select class="styled-select semi-square">
           <option value="fullstack">Fullstack Academy of Code</option>
           <option value="zoo">Central Park Zoo</option>
           <option value="park">Prospect Park</option>
         </select>
-        <button></button>
+        <button>&#10004;</button>
+        </div>
       </div>
 
       <div id="itineraryContainer">
         <h1>Your Itinerary</h1>
 
-        <h3>Hotel</h3>
-        <ul>
-          <li>Super 8</li>
-        </ul>
-        <button></button>
+        <h2>Hotels</h2>
+        <ol>
+          <li>
+            <div class="selections">
+            Super 8
+            <button>X</button>
+            </div>
+          </li>
+        </ol>
 
-        <h3>Restaurants</h3>
-        <ul>
-          <li>Bees</li>
-          <li>Generic Option #4</li>
-        </ul>
-        <button></button>
 
-        <h3>Activities</h3>
-        <ul>
-          <li>Fullstack Academy of Code</li>
-          <li>Central Park Zoo</li>
-          <li>Prospect Park</li>
-        </ul>
-        <button></button>
+        <h2>Restaurants</h2>
+        <ol>
+          <li>
+            <div class="selections">
+            Bees
+            <button>X</button>
+          </li>
+          <li>
+            <div class="selections">
+            Generic Option #4
+            <button>X</button>
+          </li>
+        </ol>
+
+        <h2>Activities</h2>
+        <ol>
+          <li>
+            <div class="selections">
+            Fullstack Academy of Code
+            <button>X</button>
+          </li>
+          <li>
+            <div class="selections">
+            Central Park Zoo
+            <button>X</button>
+          </li>
+          <li>
+            <div class="selections">
+            Prospect Park
+            <button>X</button>
+          </li>
+        </ol>
 
       </div>
     </div> <!-- end sidebar -->
