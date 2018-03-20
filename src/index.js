@@ -1,6 +1,6 @@
 console.log('running correctly');
 
-const token = require('./mapboxtoken.js');
+const token = require('./mapboxtoken');
 const mapboxgl = require("mapbox-gl");
 const markerBuilder = require('./marker.js');
 
@@ -21,4 +21,15 @@ const map = new mapboxgl.Map({
 
 // new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
 
+
+markerBuilder('Hotel', [-74.000, 40.715]).addTo(map);
+
+markerBuilder('Restaurant', [-74.010, 40.725]).addTo(map);
+
+markerBuilder('Restaurant', [-74.014, 40.715]).addTo(map);
+// fullstack
 markerBuilder('Activity', [-74.009, 40.705]).addTo(map);
+// central park zoo
+markerBuilder('Activity', [-73.9718, 40.7678]).addTo(map);
+// prospect park
+markerBuilder('Activity', [-73.9690, 40.6602]).addTo(map);

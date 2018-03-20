@@ -10,6 +10,76 @@
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-  <div id="map"></div>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <h1>TripPlanner</h1>
+    </div>
+    <div class="navbar-right">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <div class="mapContainer">
+    <div id="map"></div>
+
+    <div class="sidebar">
+      <div id="selectionContainer">
+        <h3>Hotels</h3>
+        <select>
+          <option value="super8">Super 8</option>
+          <option value="super7">Super 7</option>
+          <option value="super6">Super 6</option>
+          <option value="super">Super the Original</option>
+        </select>
+        <button></button>
+
+        <h3>Restaurants</h3>
+        <select>
+            <option value="bees">Bees</option>
+            <option value="genericOptionNumber4">Generic Option #4</option>
+            <option value="fancy">Fancy</option>
+          </select>
+          <button></button>
+
+        <h3>Activities</h3>
+        <select>
+          <option value="fullstack">Fullstack Academy of Code</option>
+          <option value="zoo">Central Park Zoo</option>
+          <option value="park">Prospect Park</option>
+        </select>
+        <button></button>
+      </div>
+
+      <div id="itineraryContainer">
+        <h1>Your Itinerary</h1>
+
+        <h3>Hotel</h3>
+        <ul>
+          <li>Super 8</li>
+        </ul>
+        <button></button>
+
+        <h3>Restaurants</h3>
+        <ul>
+          <li>Bees</li>
+          <li>Generic Option #4</li>
+        </ul>
+        <button></button>
+
+        <h3>Activities</h3>
+        <ul>
+          <li>Fullstack Academy of Code</li>
+          <li>Central Park Zoo</li>
+          <li>Prospect Park</li>
+        </ul>
+        <button></button>
+
+      </div>
+    </div> <!-- end sidebar -->
+
+  </div>
+
 </body>
 </html>
